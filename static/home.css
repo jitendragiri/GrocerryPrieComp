@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(24, 24, 24);
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header,main{
+    margin-inline:1rem;
+}
+
+input, button {
+    padding: 0.7rem;
+    border: 1px solid;
+    background: #eee;
+  }
+
+
+a {
+    width: 200px;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+
+  a:hover{
+    background: rgb(57, 57, 57);
+  }
+
+  a img {
+    width: 200px;
+  }
+  a div, a h2 {
+    width: inherit;
+    color: white;
+  }
+
+
+a > div {
+  min-height:55px;
+}
+
+section {
+    display: flex;
+    gap: 1rem;
+  }
