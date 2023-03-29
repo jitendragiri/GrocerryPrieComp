@@ -1,0 +1,59 @@
+
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<body class="contact">
+
+    
+    <div class="topnav">
+        <a  href="/">Home</a>
+        <a href="about">About</a>
+        <a class="active" href="contact">Contact</a>
+        </div>
+
+
+<style>
+	.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form label {
+    margin-top: 1rem;
+}
+
+.contact form input[type=submit] {
+    margin-top: 2rem;
+    background: white;
+    border-radius: 26px;
+    background: skyblue;
+}
+
+.contact input, .contact textarea {
+    background: white;
+    border-radius: 9px;
+    margin-top: 1rem;
+}
+</style>
+<main>
+  <div>
+    <h1>Contact Us</h1>
+    <p>If you have any questions or feedback, please feel free to contact us by using the form below:</p>
+  </div>
+  <div>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <input type="submit" value="Send">
+    </form>
+  </div>
+</main>
+
+</body>
+
+{% endblock %}
